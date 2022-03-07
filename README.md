@@ -21,7 +21,11 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 
 ## APIs
 GET `/api/v1/movies` - Returns a small set of movies from the DB.
+
 GET `/api/v1/movies?search=<text>` - Returns a search result from Algolia.
+
 POST `/api/v1/movies` - accepts a json body for movie, indexes it on Algolia, creates entry in db and returns the uuid.
+
 PUT `/api/v1/movies/:uuid` - Replaces a movie from Algolia and db.
+
 DELETE `/api/v1/movies/:uuid` - Deletes a movie from Algolia and db.
